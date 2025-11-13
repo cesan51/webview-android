@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Kaisof</string>
+    <string name="loading">Cargando...</string>
+    <string name="no_internet">Sin conexión a Internet</string>
+    <string name="retry">Reintentar</string>
+    <string name="exit">Salir</string>
+</resources>
