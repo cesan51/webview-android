@@ -8,19 +8,19 @@ Esta es una plantilla de aplicación Android que convierte cualquier sitio web e
 
 ---
 
-## 🚀 Características
+## Características
 
-- 🌐 **WebView optimizado**: Convierte tu sitio web en app Android nativa
-- 📶 **Monitor de conexión en tiempo real**: Detecta pérdida y recuperación de internet automáticamente
-- 🔔 **Diálogos automáticos**: Notifica al usuario sobre el estado de la conexión
-- 🎤 **Permiso de micrófono**: Maneja permisos tanto del sistema como del WebView
-- 🔙 **Navegación con botón atrás**: Navega en el historial del WebView
-- 🎨 **Iconos multiplataforma**: Compatible con Linux, Windows y navegadores
-- 📱 **Lista para Play Store**: Configuración preparada para publicación en release
+- **WebView optimizado**: Convierte tu sitio web en app Android nativa
+- **Monitor de conexión en tiempo real**: Detecta pérdida y recuperación de internet automáticamente
+- **Diálogos automáticos**: Notifica al usuario sobre el estado de la conexión
+- **Permiso de micrófono**: Maneja permisos tanto del sistema como del WebView
+- **Navegación con botón atrás**: Navega en el historial del WebView
+- **Iconos multiplataforma**: Compatible con Linux, Windows y navegadores
+- **Lista para Play Store**: Configuración preparada para publicación en release
 
 ---
 
-## ⚙️ Configuración para tu proyecto
+## Configuración para tu proyecto
 
 ### 1. Clonar el repositorio
 
@@ -30,7 +30,7 @@ git clone
 
 ### 2. Archivos que debes modificar
 
-#### 📄 `AndroidManifest.xml`
+#### `AndroidManifest.xml`
 
 Ubicación: `app/src/main/AndroidManifest.xml`
 
@@ -46,17 +46,17 @@ Ubicación: `app/src/main/AndroidManifest.xml`
     android:value="https://tu-dominio.com" />
 ```
 
-#### 📄 `build.gradle` (Module: app)
+#### `build.gradle` (Module: app)
 
 Ubicación: `app/build.gradle.kts`
 
 ```kotlin
 android {
-    namespace = "com.tudominio.webview"    // ⚠️ Cambiar por tu package namespace
+    namespace = "com.tudominio.webview"    // Cambiar por tu package namespace
     compileSdk = 36
     
     defaultConfig {
-        applicationId = "com.tudominio.webview"  // ⚠️ Cambiar por tu package name único
+        applicationId = "com.tudominio.webview"  // Cambiar por tu package name único
         minSdk = 24                              // Android 7.0
         targetSdk = 36
         versionCode = 1                          // Incrementar con cada actualización
@@ -75,7 +75,7 @@ android {
 }
 ```
 
-#### 📄 `themes.xml`
+#### `themes.xml`
 
 Ubicación: `app/src/main/res/values/themes.xml`
 
@@ -90,7 +90,7 @@ Ubicación: `app/src/main/res/values/themes.xml`
 </resources>
 ```
 
-#### 📄 `strings.xml`
+#### `strings.xml`
 
 Ubicación: `app/src/main/res/values/strings.xml`
 
@@ -118,7 +118,7 @@ Ubicación: `app/src/main/java/com/tudominio/webview/MainActivity.kt`
 ```kotlin
 class MainActivity : AppCompatActivity() {
     private lateinit var webView: WebView
-    private val webUrl = "https://tu-dominio.com" // ⚠️ CAMBIAR ESTA URL
+    private val webUrl = "https://tu-dominio.com" // CAMBIAR ESTA URL
     
     // ... resto del código
 }
@@ -172,15 +172,15 @@ El APK se genera en: `app/build/outputs/apk/release/`
 
 ---
 
-## 🔒 Permisos utilizados
+## Permisos utilizados
 
-- 🌐 **INTERNET**: Para cargar el contenido web
-- 📶 **ACCESS_NETWORK_STATE**: Para verificar conectividad
-- 🎤 **RECORD_AUDIO**: Permiso de micrófono
+- **INTERNET**: Para cargar el contenido web
+- **ACCESS_NETWORK_STATE**: Para verificar conectividad
+- **RECORD_AUDIO**: Permiso de micrófono
 
 ---
 
-## 📝 Checklist pre-publicación
+## Checklist pre-publicación
 
 - [ ] Cambiar `namespace` y `applicationId` en `build.gradle.kts`
 - [ ] Cambiar package name `com.kaisof.webview` en toda la estructura
@@ -198,7 +198,7 @@ El APK se genera en: `app/build/outputs/apk/release/`
 
 ---
 
-## 🤝 Soporte y contribuciones
+## Soporte y contribuciones
 
 - **Issues**: Reporta problemas en la sección de issues
 - **Pull Requests**: Las contribuciones son bienvenidas
@@ -206,15 +206,15 @@ El APK se genera en: `app/build/outputs/apk/release/`
 
 ---
 
-## 📞 Contacto
+## Contacto
 
 Para consultas sobre esta plantilla:
-- 🌐 Web: [kaisof.com](https://kaisof.com)
-- 📧 Email: antonio.dev@kaisof.com
+- Web: [kaisof.com](https://kaisof.com)
+- Email: antonio.dev@kaisof.com
 
 ---
 
-## ⚠️ Notas importantes
+## Notas importantes
 
 - **Lenguaje**: Desarrollada en Kotlin para Android Studio
 - **Funcionalidad**: WebView con monitoreo de conexión en tiempo real y permiso de micrófono
